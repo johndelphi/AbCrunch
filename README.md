@@ -27,7 +27,6 @@ Built With
 
 
 ## Contributors
-Melissa Uchem
 
 ## License
 
