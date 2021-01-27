@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+     <link rel = "stylesheet" href = "./CSS/near.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gyms Near Me | AbCrunch</title>
+</head>
+<body>
+      <!--nav-->
+      <div class="nav">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <img src="images/menu-icon.png" alt="toggle-icon"
+                  id="toggle-icon" onclick="toggle()">
+          </span>
+          <div class="logo" style="color:white;">
+             <h3>
+                 <a href="index.html">
+                     AbCrunch
+                 </a>
+             </h3>
+          </div>
+          <div class="nav-link-box" id="js-menu">
+              <ul class="nav-links">
+                  <li class="nav-item">
+                      <a href="membership.html"> Gym Memberships</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="near.html">Gyms Near Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="train.html">Training</a>
+                  </li>
+                  <li class="nav-item last-item">
+                      <a href="login.html">Login</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--end nav-->
+            <div class="jumbotron">
+                <div class = "search-sec">
+                 <div class="locate-txt"style = "margin-bottom:0;">
+                     <h2>Find A Gym Near You</h2>
+                 </div>
+                <div class="">
+                    <input placeholder="Enter Your City..." id="search-box"><button type="button" class="search-bnt"
+                        id="loc-bnt" onclick="search()">Locate</button>
+                </div>
+            </div>
+        </div>
+      <div class = "container" style = "padding:0">
+          <div class = "row">
+                 <div class="col-sm-4 locate-sec">
+                     <p class = "notice-txt">With the A40 FIt Card®, you get access to AbCrunch 
+                        locations worldwide!</p>
+                        <h6 id='near-by'></h6>
+                     <div id="output-sec"></div>
+                 </div>
+        <div class="col-sm-8" style="padding:0">
+                     <div id="map"></div>
+                </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-dark ">
+          <div class="container">
+              <div class="link-box">
+                  <ul class='d-flex'>
+                      <li><img src='./images/Facebook.png' alt="facebook-logo" id="logo"></li>
+                      <li><img src='./images/Pinterest.png' alt="Pinterest-logo" id="logo"></li>
+                      <li><img src='./images/Instagram.png' alt="instagram-logo" id="logo"></li>
+                      <li><img src='./images/Twitter.png' alt="twitter-logo" id="logo"></li>
+                  </ul>
+              </div>
+              <ul div class="d-flex">
+                  <li>
+                      <h6>Home</h6>
+                  </li>
+                  <li>
+                      <h6>About</h6>
+                  </li>
+                  <li>
+                      <h6>Blog</h6>
+                  </li>
+                  <li>
+                      <h6>Contact</h6>
+                  </li>
+                  <li>
+                      <h6>Locations</h6>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <p class="text-center" style="margin:0px;padding:10px 0 10px 0;color:#f2f2f2;"><small>
+                  Terms of use - Privacy Policy</small></p>
+      </div>
+      </div>
+    <script src = "./JS/script.js"></script>
+    <script src = "JS/map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYdPNxug7N_Gxx3gY0kj_LX5Fen6Ku3dM&callback=initMap">
+    </script>
+</body>
+</html>
